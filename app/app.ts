@@ -1,5 +1,5 @@
-import Shepherd  from 'shepherd.js';
-import '/node_modules/shepherd.js/dist/css/shepherd.css';
+import Shepherd from 'shepherd.js';
+import '/view/css/shepherd.css';
 
 
 import { NegociacaoController } from "./controller/negociacao-controller.js";

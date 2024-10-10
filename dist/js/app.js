@@ -1,5 +1,5 @@
 import Shepherd from 'shepherd.js';
-import '/node_modules/shepherd.js/dist/css/shepherd.css';
+import '/view/css/shepherd.css';
 import { NegociacaoController } from "./controller/negociacao-controller.js";
 const controller = new NegociacaoController();
 const form = document.querySelector('.form');
@@ -32,3 +32,4 @@ tour.addStep({
         }
     ]
 });
+tour.start();

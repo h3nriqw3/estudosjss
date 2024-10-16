@@ -1,6 +1,6 @@
-import Shepherd from 'shepherd.js';
-import '/view/css/shepherd.css';
 
+import 'shepherd.js/dist/css/shepherd.css';
+import Shepherd from 'shepherd.js';
 
 import { NegociacaoController } from "./controller/negociacao-controller.js";
 const controller = new NegociacaoController();
@@ -9,6 +9,7 @@ form.addEventListener('submit', event =>{
     event.preventDefault();
     controller.adiciona();
 });
+
 const tour = new Shepherd.Tour({
     useModalOverlay: true,
     defaultStepOptions: {
@@ -34,7 +35,4 @@ tour.addStep({
         }
     ]
 });
-tour.start(); 
-
-
-  
+tour.start();

@@ -20,8 +20,8 @@ const tour = new Shepherd.Tour({
     }
   });
 tour.addStep({
-    id: 'example step',
-    text: "This is where you will learn about us.",
+    id: 'step1',
+    text: "Informe a data.",
     attachTo: {
         element: '#data',  // Seleciona o campo de data
         on: 'top'
@@ -30,6 +30,24 @@ tour.addStep({
         {
             text: 'Próximo',
             action: tour.next
+        },
+        {
+            text: 'Voltar',
+            action: tour.back
+        }
+    ]
+});
+tour.addStep({
+    id: 'step2',
+    text: "Preencha a quantidade.",
+    attachTo: {
+        element: '#quantidade',  // Seleciona o campo de data
+        on: 'bottom'
+    },
+    buttons: [
+        {
+            text: 'Finalizar',
+            action: tour.complete
         },
         {
             text: 'Voltar',

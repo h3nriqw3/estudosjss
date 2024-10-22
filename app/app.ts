@@ -1,10 +1,12 @@
 
+//@ts-ignore
 import 'shepherd.js/dist/css/shepherd.css';
 import Shepherd from 'shepherd.js';
 
 import { NegociacaoController } from "./controller/negociacao-controller.js";
 const controller = new NegociacaoController();
 const form = document.querySelector('.form');
+//@ts-ignore
 form.addEventListener('submit', event =>{
     event.preventDefault();
     controller.adiciona();
